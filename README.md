@@ -1,6 +1,9 @@
 # AdvancedSlideshowScript
 An advanced slideshow/carousel JavaScript script for webpages.
 
+# Example
+https://firecontroller1847.github.io/AdvancedSlideshowScript/example/index.html
+
 # LICENSE EXCEPTIONS
 There is a DIFFERENCE LICENSE for the following files:
 

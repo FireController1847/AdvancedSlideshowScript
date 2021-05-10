@@ -1,0 +1,134 @@
+/* Other Stuff */
+/* For slideshow stuff, see below */
+button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+button:hover {
+    cursor: pointer;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.right {
+  transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+}
+.up {
+  transform: rotate(-135deg);
+}
+.down {
+  transform: rotate(45deg);
+}
+#quote-slideshow {
+    margin: 0 10%;
+    height: 20vh;
+}
+#quote-slideshow figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center;
+    max-height: 20vh;
+}
+#quote-slideshow blockquote {
+    margin: 0;
+    padding: 0 0 15px 0;
+}
+#quote-slideshow .arrow {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+}
+#quote-slideshow .arrow:hover {
+    border-color: #444444;
+}
+#quote-slideshow .arrow.left {
+    left: -8%;
+}
+#quote-slideshow .arrow.right {
+    right: -8%;
+}
+#quotes {
+    overflow-x: hidden;
+}
+
+/* Slideshow Stuff */
+.slideshow {
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.slideshow-item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -20000px;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    transition: transform ease-in-out 1s;
+    pointer-events: none;
+}
+.slideshow-item-prev {
+    transform: translateX(-101vw);
+}
+.slideshow-item-selected {
+    transform: translateX(0);
+    left: 0;
+    pointer-events: all;
+}
+.slideshow-item-next {
+    transform: translateX(101vw);
+}
+.slideshow-item-transitioning {
+    left: 0;
+}
+.slideshow-item-notransition {
+    transition: none !important;
+}
+.slideshow-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+    pointer-events: none;
+}
+.slideshow-button button,
+.slideshow-button a {
+    pointer-events: all;
+}
+.slideshow-indicators {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+}
+.slideshow-indicator {
+    width: 40px;
+    height: 6px;
+    background-color: #dddddd;
+    border-radius: 20px;
+    margin: 0 5px;
+}
+.slideshow-indicator-selected {
+    background-color: #bbbbbb !important;
+}

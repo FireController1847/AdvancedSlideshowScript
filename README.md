@@ -1,4 +1,4 @@
 # AdvancedSlideshowScript
 An advanced slideshow/carousel JavaScript script for webpages.
 
-See example.js for an example usage.
+See example.js / example.html for an example usage.
